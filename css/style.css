@@ -42,7 +42,7 @@ VERSION : 1.1
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 @import url('http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
-
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	RESET
@@ -68,13 +68,14 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,hr,t
 	GENERAL
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 body {
-	color: #fff;
-	font: normal 16px "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #003865;
+	/*font: normal 16px "Roboto", 'cwTeXYen', "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font: normal 20px 'cwTeXYen';
 	font-weight: 300;
-	background-color: #000;
+	background-color: #c4f4e0;
 	overflow-x: hidden;
 	line-height: 1.5;
-        font-family: 'Lato', sans-serif;
+        font-family: 'cwTeXYen','Lato', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	
@@ -91,7 +92,7 @@ h2{
 	margin:  0;
 }
 h3{
-font-size: 1.2em;
+font-size: 1.5em;
 font-weight: 900;
 }
 
@@ -101,8 +102,8 @@ h5{
 	line-height: 20px;
 }
 p{
-font-family: 'Open Sans', sans-serif;
-font-size:0.93em;
+font-family: 'cwTeXYen','Open Sans', sans-serif;
+font-size:1.2em;
 }
 
 
@@ -130,7 +131,7 @@ p.intro{
 	font-size:0.9em;
 	margin: 14px 0;
 	line-height: 24px;
-	font-family: 'Open Sans', sans-serif;
+	font-family:'cwTeXYen','Open Sans', sans-serif;
 }
 .relative
 {
@@ -196,7 +197,7 @@ text-align:justify;
 	font-weight: 700;
 	letter-spacing: 0.02em;
 	text-transform: uppercase;
-	font-family: 'Roboto Slab', serif;
+	font-family: 'cwTeXYen','Roboto Slab', serif;
 	margin-bottom: 20px;
 }
 .scroll-block {
@@ -209,15 +210,15 @@ text-align:justify;
 ------------------------------*/
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6{
-	font-family: 'Roboto', sans-serif;
+	font-family:'cwTeXYen', 'Roboto', sans-serif;
 	margin: 0;
 }
 
 /*	BUTTON
 ------------------------------*/
 .btn {
-    font-size: 14px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-family: 'cwTeXYen','Source Sans Pro', sans-serif;
     text-transform: uppercase;
     border-radius: 0;
 }
@@ -251,7 +252,7 @@ h1, h2, h3, h4, h5, h6,
 }
 .btn-custom-outline:hover,.btn-custom-outline:focus{
 	color: #ffffff;
-	background-color: rgba(255,255,255,.5);
+	background-color: rgba(17,125,139,.5);
 }
 .btn-bar a{
 	margin-right: 10px;
@@ -355,7 +356,7 @@ div.preloader {
 .nim-menu{
 	padding: 10px;
 	transition: all 0.8s;
-        background:#000;
+        background:#32CEB2;
         border-bottom:none;
         transition:all 0.4s ease-in;
         -webkit-transition:all 0.4s ease-in;
@@ -415,7 +416,7 @@ color:#fff;
 
 .main-heading
 {
-   background: url(../images/main.jpg) center center no-repeat;
+   background: url(../images/main2.jpg) center center no-repeat;
 	background-size:cover;
 	background-attachment: fixed;
 	color: #cfcfcf;
@@ -423,12 +424,12 @@ color:#fff;
 }
 
 .overlay{
-	background: -moz-linear-gradient(top,  rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.4) 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.8)), color-stop(17%,rgba(0,0,0,0.73)), color-stop(35%,rgba(0,0,0,0.66)), color-stop(62%,rgba(0,0,0,0.55)), color-stop(100%,rgba(0,0,0,0.4))); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* W3C */
+	background: -moz-linear-gradient(top,  rgba(110,137,121,1) 0%, rgba(0,0,0,0.73) 17%, rgba(0,0,0,0.66) 35%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,0.9) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(110,137,121,0.8)), color-stop(17%,rgba(110,137,121,0.73)), color-stop(35%,rgba(110,137,121,0.66)), color-stop(62%,rgba(110,137,121,0.55)), color-stop(100%,rgba(110,137,121,0.9))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(110,137,121,1) 0%,rgba(110,137,121,1) 17%,rgba(110,137,121,1) 35%,rgba(110,137,121,1) 62%,rgba(110,137,121,0.9) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(110,137,121,1) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(110,137,121,1) 0%,rgba(0,0,0,0.73) 17%,rgba(0,0,0,0.66) 35%,rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(196,244,224,1) 0%,rgba(196,244,224,0.8) 17%,rgba(196,244,224,0.7) 35%,rgba(196,244,224,0.65) 62%,rgba(196,244,224,0.6) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc000000', endColorstr='#66000000',GradientType=0 ); /* IE6-9 */
 	//background-attachment: fixed;
         height:auto;
@@ -477,8 +478,8 @@ p.lead
 	margin-left: 6px;
 }
 .main-heading-text {
-	font-size: 16px;
-	color: #ffffff;
+	font-size: 20px;
+	color: #6a818e;
 	margin-bottom: 20px;
 }
 .main-cursor {
@@ -597,16 +598,17 @@ p.lead
     text-transform: capitalize;
     font-family: 'Roboto Slab', serif;
     margin-bottom: 5px;
-    
+    color:#FFFFFF
 }
 
 .work-desc h3 a
 {
-    color:#fff;
+    color:#FFFFFF;
 }
 .work-desc span {
 	margin-top: 10px;
         font-size:0.82em;
+    color:#FFFFFF;
 }
 
 
@@ -654,7 +656,7 @@ p.lead
 .subheading h4 {
 	color: #ffffff;
 	font-style: italic;
-	font-family: 'Roboto Slab', serif;
+	font-family:  'cwTeXYen','Roboto Slab', serif;
 }
 .intermediate-container .heading h2 {
 	font-size: 40px;
@@ -700,7 +702,7 @@ p.lead
 /*	STATS
 ------------------------------*/
 .our-stats {
-    background: #35434f;
+    background: #333333;
 }
 
 .our-stats>.container
