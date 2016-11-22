@@ -42,7 +42,7 @@ VERSION : 1.1
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 @import url('http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100');
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
-@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+@import url('http://fonts.googleapis.com/earlyaccess/cwtexyen.css');
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	RESET
@@ -356,7 +356,7 @@ div.preloader {
 .nim-menu{
 	padding: 10px;
 	transition: all 0.8s;
-        background:#32CEB2;
+        background:#000;
         border-bottom:none;
         transition:all 0.4s ease-in;
         -webkit-transition:all 0.4s ease-in;
@@ -452,7 +452,7 @@ p.lead
    top:5px;
    color:#e3e3e3;
    font-size:0.93em;
-   
+
 }
 
 .main-heading-content {
@@ -630,7 +630,7 @@ p.lead
     padding-top:15px;
 }
 .our-team p{
-	font-size:0.83em;
+	font-size:0.93em;
         padding-top:15px;
 }
 .list-inline a
@@ -670,6 +670,7 @@ p.lead
 
 /*	TESTIMONIAL
 ------------------------------*/
+/*
 .client-testimonial
 {
  background:url("../images/img-2.jpg");
@@ -697,8 +698,38 @@ p.lead
 	font-weight: 400;
 	margin: 30px 0;
 	color: #d1d1d1;
+}*/
+
+/*	News
+------------------------------*/
+.news
+{
+    background:url("../images/img-2.jpg");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size:cover;
 }
 
+.news .container
+{
+    padding:70px 0px;
+}
+
+
+#post {
+    padding: 30px 0;
+}
+#post .item{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#post .item p {
+    font-weight: 400;
+    margin: 30px 0;
+    color: #d1d1d1;
+}
 /*	STATS
 ------------------------------*/
 .our-stats {
@@ -781,7 +812,7 @@ font-family: 'Roboto Slab', serif;
 -------------------------------------------------------*/
 .sub-form
 {
-    background:#222;
+    background:#333333;
 }
 .sub-form>.container
 {
@@ -802,8 +833,8 @@ font-family: 'Roboto Slab', serif;
 }
 
 .form-control {
-  background-color: #222;
-  color: #4c4c4c;
+  background-color: #333333;
+  color: #fafafa;
   box-shadow: none;
   height: 60px;
   font-weight: 400;
@@ -815,7 +846,6 @@ font-family: 'Roboto Slab', serif;
     margin-top:50px;
     margin-left:auto;
     margin-right:auto;
-    
 }
 
 .form-control:focus {
@@ -837,7 +867,7 @@ font-family: 'Roboto Slab', serif;
 
 #mc-form .btn-default
 {
-    height: 60px;
+    height: 300px;
 }
 
 #mc-notification {
