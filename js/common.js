@@ -4,7 +4,7 @@
 AUTHOR :VIJAYAN PP
 PROJECT :NIM
 VERSION : 1.1
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 */
 
 (function($) {
@@ -20,6 +20,7 @@ VERSION : 1.1
             {
               App.typing();
               App.owlTestimonial();
+              App.owlNewsPost();
               App.stats();
               App.menuAnimation();
               App.navigate();
@@ -56,6 +57,15 @@ VERSION : 1.1
         singleItem:true
         });
     },
+        owlNewsPost:function()
+        {
+            $("#post").owlCarousel({
+                navigation : false, // Show next and prev buttons
+                slideSpeed : 300,
+                paginationSpeed : 400,
+                singleItem:true
+            });
+        },
     stats:function()
    {
         $('.our-stats-box').each(function () {
@@ -66,10 +76,10 @@ VERSION : 1.1
    },
    menuAnimation:function()
    {
-       $(window).scroll(function()
-       {
-       var top_v=$(window).scrollTop();
-       var themecolor="#f8198d";
+      $(window).scroll(function()
+      {
+      var top_v=$(window).scrollTop();
+      var themecolor="#f8198d";
       if(top_v>=30)
       {
         
