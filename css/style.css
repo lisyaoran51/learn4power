@@ -514,7 +514,11 @@ p.lead
   
 }
 
+.aboutus>.container2
+{
+    background: #cbfff0;
 
+}
 
  .about-box {
 	overflow: hidden;
@@ -536,6 +540,12 @@ p.lead
 	font-size:0.73em;
         padding-top:10px;
 }
+
+
+/*----------------ABOUT US2
+
+-------------------------------------------------------*/
+
 
 /*----------------OUR WORKS
 
@@ -718,35 +728,36 @@ p.lead
 ------------------------------*/
 .news
 {
-    background:url("../images/img-2.jpg");
-    background-position: center center;
-    background-attachment: fixed;
-    background-size:cover;
+    background:#333333;
+/*background:url("../images/img-2.jpg");
+background-position: center center;
+background-attachment: fixed;
+background-size:cover;*/
 }
 
 .news .container
 {
-    padding:70px 0px;
+padding:70px 0px;
 }
 
 
 #post {
-    padding: 30px 0;
+padding: 30px 0;
 }
 #post .item{
-    display: block;
-    width: 100%;
-    height: auto;
+display: block;
+width: 100%;
+height: auto;
 }
 
 #post .item p {
-    font-weight: 400;
-    margin: 30px 0;
-    color: #d1d1d1;
+font-weight: 400;
+margin: 30px 0;
+color: #d1d1d1;
 }
 
 #post .item h5 {
-    color: #b2b2b2;
+color: #b2b2b2;
 }
 
 /*	STATS

@@ -181,18 +181,18 @@ VERSION : 1.1
 var fullscreenslider2=function()
 {
     $("section.main-heading").vegas({
-        delay: 1000,
+        delay: 10000,
         slides: [
-            { src: "images/slider/0.jpg" },
-            { src: "images/slider/4.jpg" },
-            { src: "images/slider/2.jpg" },
-            { src: "images/slider/3.jpg" },
-            { src: "images/slider/4.jpg" },
-            { src: "images/slider/5.jpg" },
-            { src: "images/slider/6.jpg" },
-            { src: "images/slider/7.jpg" },
-            { src: "images/slider/8.jpg" },
-            { src: "images/slider/9.jpg" }
+            { src: "images/slider/0_ps.jpg" },
+            { src: "images/slider/1_ps.jpg" },
+            { src: "images/slider/2_ps.jpg" },
+            { src: "images/slider/3_ps.jpg" },
+            { src: "images/slider/4_ps.jpg" },
+            { src: "images/slider/5_ps.jpg" },
+            { src: "images/slider/6_ps.jpg" },
+            { src: "images/slider/7_ps.jpg" },
+            { src: "images/slider/8_ps.jpg" },
+            { src: "images/slider/9_ps.jpg" }
         ],animation: 'kenburns'
     });
 }
