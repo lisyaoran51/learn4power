@@ -181,7 +181,7 @@ VERSION : 1.1
 var fullscreenslider2=function()
 {
     $("section.main-heading").vegas({
-        delay: 10000,
+        delay: 3000,
         slides: [
             { src: "images/slider/0_ps.jpg" },
             { src: "images/slider/1_ps.jpg" },

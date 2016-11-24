@@ -517,7 +517,8 @@ p.lead
 .aboutus>.container2
 {
     background: #cbfff0;
-
+    padding-left:60px;
+    padding-right:60px;
 }
 
  .about-box {
@@ -541,10 +542,6 @@ p.lead
         padding-top:10px;
 }
 
-
-/*----------------ABOUT US2
-
--------------------------------------------------------*/
 
 
 /*----------------OUR WORKS
