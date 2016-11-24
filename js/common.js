@@ -177,3 +177,22 @@ VERSION : 1.1
     ],animation: 'kenburns'
 });
   }
+
+var fullscreenslider2=function()
+{
+    $("section.main-heading").vegas({
+        delay: 10000,
+        slides: [
+            { src: "images/slider/0.jpg" },
+            { src: "images/slider/1.jpg" },
+            { src: "images/slider/2.jpg" },
+            { src: "images/slider/3.jpg" },
+            { src: "images/slider/4.jpg" },
+            { src: "images/slider/5.jpg" },
+            { src: "images/slider/6.jpg" },
+            { src: "images/slider/7.jpg" },
+            { src: "images/slider/8.jpg" },
+            { src: "images/slider/9.jpg" }
+        ],animation: 'kenburns'
+    });
+}
