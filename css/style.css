@@ -101,6 +101,8 @@ h5{
 	font-weight: 700;
 	line-height: 20px;
 }
+
+
 p{
 font-family: 'cwTeXYen','Open Sans', sans-serif;
 font-size:1.2em;
@@ -186,6 +188,12 @@ text-align:justify;
 	max-width: 450px;
 	margin:0 auto;
         padding-top:10px;
+}
+.b-slog {
+    font-size:0.93em;
+    max-width: 720px;
+    margin:0 auto;
+    padding-top:10px;
 }
 
 .gap
@@ -519,7 +527,7 @@ p.lead
     padding-top:10px;
 }
 .about-box p{
-	font-size:0.93em;
+	font-size:0.73em;
         padding-top:10px;
 }
 
@@ -730,6 +738,11 @@ p.lead
     margin: 30px 0;
     color: #d1d1d1;
 }
+
+#post .item h5 {
+    color: #d1d1d1;
+}
+
 /*	STATS
 ------------------------------*/
 .our-stats {
@@ -831,6 +844,8 @@ font-family: 'Roboto Slab', serif;
  .form-control:-ms-input-placeholder {
  color: #8A8A8A;
 }
+
+
 
 .form-control {
   background-color: #333333;
