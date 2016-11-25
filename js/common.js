@@ -83,7 +83,8 @@ VERSION : 1.1
       if(top_v>=30)
       {
         
-          $(".nim-menu").css({height:"80px",padding:"15px",background:"#fff",boxShadow:"2px 2px 3px 3px rgba(0,0,0,0.3"});
+          $(".nim-menu").css({height:"80px",padding:"15px",background:"#fff",boxShadow:"2px 2px 3px 3px" +
+          " rgba(0,0,0,0.3"});
           $(".nim-menu.navbar-default .navbar-nav > li > a,a.navbar-brand").css("color","#000");
            $(".nim-menu.navbar-default .navbar-nav > li > a").hover(function(){$(this).css("color",themecolor)},function(){$(this).css("color","#000")})
        }
