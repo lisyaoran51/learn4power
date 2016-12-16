@@ -17,6 +17,45 @@ VERSION : 1.1
     background-color:#32CEB2; /*Defines the theme bakcground color*/
 }
 
+.titlecolor
+{
+    color:#333333;
+}
+
+.blog_button_bgcolor
+{
+    background-color:#6bb6b4; /*Defines the theme bakcground color*/
+}
+
+.blog_button_bgcolor
+{
+    background-color:#6bb6b4;
+}
+
+.brighten_bgcolor
+{
+    /*background-color: #cbfff0;*/
+    /*background-color: #e4fff5;*/
+    background-color: #d8feed;
+}
+
+.brighten_bgcolor2
+{
+    /*background-color: #cbfff0;*/
+    /*background-color: #e4fff5;*/
+    background-color: #defee6;
+}
+
+.beige_bgcolor
+{
+    background-color: #fffeee;
+}
+
+.brown-bgcolor
+{
+    background-color: #ffefa9;
+}
+
 .borderColor
 {
     border-color:#000;/*Defines the color of the border*/
@@ -70,6 +109,11 @@ color:#6bb6b4;
 .grey_background_color
 {
     background-color:#676565;
+}
+
+.grey_background_color
+{
+    background-color: #a9a7a7;
 }
 
 .sectionTitle hr
