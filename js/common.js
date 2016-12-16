@@ -21,6 +21,7 @@ VERSION : 1.1
               App.typing();
               App.owlTestimonial();
               App.owlNewsPost();
+                App.owlProduct();
               App.stats();
               App.menuAnimation();
               App.navigate();
@@ -57,15 +58,26 @@ VERSION : 1.1
         singleItem:true
         });
     },
-        owlNewsPost:function()
+
+    owlNewsPost:function()
         {
             $("#post").owlCarousel({
-                navigation : false, // Show next and prev buttons
+                navigation : true, // Show next and prev buttons
                 slideSpeed : 300,
                 paginationSpeed : 400,
                 singleItem:true
             });
         },
+        owlProduct:function()
+        {
+            $("#product").owlCarousel({
+                navigation : true, // Show next and prev buttons
+                slideSpeed : 300,
+                paginationSpeed : 400,
+                singleItem:true
+            });
+        },
+
     stats:function()
    {
         $('.our-stats-box').each(function () {
