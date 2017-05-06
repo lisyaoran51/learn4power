@@ -1,0 +1,177 @@
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	IMPORT FONTS
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@import url('http://fonts.googleapis.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300italic,300,100italic,100');
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800');
+@import url('http://fonts.googleapis.com/earlyaccess/cwtexyen.css');
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	RESET
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+*{
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+}
+
+html
+{
+    -webkit-font-smoothing:antialiased;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,hr,th,td {
+    margin:0;
+    padding:0;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	GENERAL
+++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+body {
+    color: #333333;
+    /*font: normal 16px "Roboto", 'cwTeXYen', "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    font: normal 20px 'cwTeXYen';
+    font-weight: 300;
+    overflow-x: hidden;
+    /*line-height: 5;*/
+    font-family: 'cwTeXYen','Lato', sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+
+}
+
+.gap
+{
+    width:100%;
+    height:30px;
+}
+
+
+.OrderMenu
+{
+    padding:10px 50px 0px 50px;
+    display:block
+    /*上 右 下 左*/
+}
+
+.OrderMenu .step
+{
+    background-color: #dbdbdb;
+}
+.active
+{
+    background-color: #dbdbdb;
+}
+
+table
+{
+    width:80%;
+    border-collapse:collapse;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #000;
+}
+
+table td
+{
+    padding:5px 0px;
+    color:#555;
+    text-align:center;
+    background-color:#fff;
+    border-bottom:1px solid #915957;
+}
+
+
+table.v1tblordlist
+{
+    border-collapse:collapse;
+    background-color: #dbdbdb;
+    color: #333333;
+}
+
+
+.v1tblordlist tr
+{
+    background-color: #dbdbdb;
+    color: #333333;
+}
+
+.v1tblordlist td
+{
+    vertical-align: middle;
+    font-size: 0.8em;
+}
+
+
+.v1tblordlist .pdimg
+{
+    width:100px
+}
+
+
+.summary
+{
+
+    width:80%;
+    text-align: right;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.summary span
+{
+    font-size: 0.7em;
+}
+
+.btn {
+    border: 0px;
+    border-radius: 0px;
+    padding: 0.8em 1.8em;
+    color: #fff;
+    font-weight: 700;
+
+    background-color: #ff8884;
+}
+
+
+.orderSecTitle
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    width:80%;
+    font-weight: 600;
+}
+
+.orderSec
+{
+    text-align: center;
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+form
+{
+
+    margin-left:auto;
+    margin-right:auto;
+    border:1px #3c3c3c solid;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+form.divWarn
+{
+    text-align:right;
+    line-height: 20;
+    font-size: 0.7em;
+}
+
+.divWarn
+{
+    font-size: 0.9em;
+    text-align:right;
+    line-height: 20;
+}

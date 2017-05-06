@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>衣券居</title>
+
+<!--/*參考
+    https://codepen.io/alassetter/pen/cyrfB
+    */-->
+
+    <!-- [ FONT-AWESOME ICON ]
+    =========================================================================================================================-->
+    <link rel="stylesheet" type="text/css" href="library/font-awesome-4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/earlyaccess/cwtexyen.css">
+    <link rel="stylesheet" type="text/css" href="css/cart.style.css">
+
+</head>
+<body>
+
+<img  src="sus_Fashion/Icon.jpg" />
+
+<div class="gap"></div>
+
+<div id="OrderMenu">
+
+    <table>
+        <tr>
+            <td>
+                <div class="step active">
+                    <div class="num">01</div>
+                    <div class="chn">確認購買清單</div>
+                    <div class="eng">CHECK ORDER</div>
+                </div>
+            </td>
+            <td>
+                <div class="step ">
+                    <div class="num">02</div>
+                    <div class="chn">選擇付款方式</div>
+                    <div class="eng">CHOOSE PAYMENT</div>
+                </div>
+            </td>
+            <td>
+                <div class="step ">
+                    <div class="num">03</div>
+                    <div class="chn">填寫運送資料</div>
+                    <div class="eng">DELIVERY INFO</div>
+                </div>
+            </td>
+            <td>
+                <div class="step ">
+                    <div class="num">04</div>
+                    <div class="chn">購物完成</div>
+                    <div class="eng">COMPLETED</div>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <div class="gap"></div>
+
+
+
+    <table class="v1tblordlist">
+        <tr>
+            <td>圖片</td>
+            <td>商品編號</td>
+            <td>商品名稱</td>
+            <td>顏色</td>
+            <td>尺寸</td>
+            <td>數量</td>
+            <td>單價</td>
+            <td>折扣價</td>
+            <td>小計</td>
+            <td>變更明細</td>
+        </tr>
+        <form action="MyCarCheck.asp" method="POST" id="frmCheck" name="frmCheck"><input type='hidden' id='is_oversea' name='is_oversea' value='N' /><input type='hidden' id='fom01' name='fom01' value='' /></form>
+        <form method="POST" action="MyCar.asp" name="formCart">
+            <input type="hidden" name="btn" value="update">
+
+            <tr>
+                <td>
+                    <a href="PDContent.asp?yano=YA1704060037">
+                        <img class="pdimg" src="http://photo.rocksteady.com.tw/photo/PDImg/11016384/11016384-106.jpg" onerror="src='images/noimage.gif'" />
+                    </a>
+                </td>
+                <td><div>11016384</div></td>
+                <td><div>韓國百搭多色落肩剪裁上衣 黑/白/粉/淺綠/灰/卡其/藍/綠 (現貨)<span style='color:red; cursor:pointer;' title='組合數量不足 3，以原價計算'>(精選現貨 層次好感 3件 888)</span></div></td>
+                <td><div>粉紅</div></td>
+                <td><div>F</div></td>
+                <td><div>
+
+                    <select size="1" name="qty:11016384:F:106"
+                            onchange="javascript:cmdUpd2();">
+                        <option value="1">1</option>
+                        <option value="2" selected>2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+
+                    </select>
+                    <!--2-->
+
+                </div>
+                </td>
+                <td><div>480</div></td>
+                <td><div>480</div></td>
+                <td><div>960</div></td>
+                <td>
+                    <div>
+                        <input type="checkbox" style="display: none;" name="prod:11016384:F:106:"
+                               value="1" class="" onclick="checkcombo(this);">
+                        <a href="javascript:;" class="btn_gray" id="lnkDel11016384_106" onclick="$(this).prev().attr('checked',true); checkcombo($(this).prev()[0]); cmdUpd1();" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('btn_cart3_0','','images/btn_cart/btn_cart3_f2.jpg',1);">
+                            取消
+                        </a>
+                        <!--<a class="btn_white" href="javascript:;" onclick="frmList.yano.value='YA1704060037'; frmList.pdno.value='11016384'; frmList.color.value='106'; frmList.size.value='F'; frmList.submit();" onmouseout="MM_swapImgRestore();" onmouseover="MM_swapImage('btn_cart1_0','','images/btn_cart/btn_cart1_f2.jpg',1);">
+                            加入追蹤清單
+                        </a>-->
+                    </div>
+                </td>
+            </tr>
+
+        </form>
+        <form id="frmList" action="MyList.asp" method="post">
+            <input type="hidden" name="yano" value="" />
+            <input type="hidden" name="pdno" value="" />
+            <input type="hidden" name="color" value="" />
+            <input type="hidden" name="size" value="" />
+        </form>
+
+
+    </table>
+
+</div>
+
+
+<div class="summary" >
+    <div>
+        <span>*訂單送出後將無法修改或取消訂單內容，請仔細確認您的購物清單是否正確。</span>
+        <span>總計金額(共 2 件) NT</span>
+        <span style="color: #ff0e52; font-weight: 600; font-size: 1.5em">$960</span>
+    </div>
+    <div>
+        寄送區域: <select onchange='document.getElementById("fom01").value = this.value;' style="width:110px;">
+        <option value='' >台灣</option>
+    </select>
+    </div>
+    <div class="gap"></div>
+    <div>
+        <input type="button" class="btn" onclick="location.href='PDList2.asp?keyword=top20&ob=B';" value="繼續購物" />
+        <a href="orderPay.html">
+            <input type="button" class="btn" href="orderPay.html" onclick='checkInput(frmCheck.is_oversea);'  value="下一步" />
+        </a>
+    </div>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
